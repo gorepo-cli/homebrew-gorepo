@@ -1,3 +1,3 @@
-# homebrew-gorepo-cli
+# homebrew-gorepo
 
-Brew tap for gorepo-cli projects
+Brew tap for gorepo projects
