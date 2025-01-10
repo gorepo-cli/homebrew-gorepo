@@ -5,21 +5,21 @@
 class Gorepo < Formula
   desc "A cli to manage Go monorepos"
   homepage "https://github.com/gorepo-cli/gorepo"
-  version "1.1.0"
+  version "1.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gorepo-cli/gorepo/releases/download/v1.1.0/gorepo_1.1.0_darwin_amd64.tar.gz"
-      sha256 "16e02a56690ad12e7f2e9bafa65413695ed81eddbc8c50e9638c6d0c4114c0b0"
+      url "https://github.com/gorepo-cli/gorepo/releases/download/v1.1.1/gorepo_1.1.1_darwin_amd64.tar.gz"
+      sha256 "4ff5a48ec0752abc1c492fc67736eb3aa2c79b957cf964d4c359982b70021b05"
 
       def install
         bin.install "gorepo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gorepo-cli/gorepo/releases/download/v1.1.0/gorepo_1.1.0_darwin_arm64.tar.gz"
-      sha256 "937fa9cc7b10339ade98ac7a551c7f805831299eb88672358a38957cc2499bb4"
+      url "https://github.com/gorepo-cli/gorepo/releases/download/v1.1.1/gorepo_1.1.1_darwin_arm64.tar.gz"
+      sha256 "82d485af915e3b78d1033dedf0fd892931648450f05ef0021bfa54e4fad4a425"
 
       def install
         bin.install "gorepo"
@@ -30,8 +30,8 @@ class Gorepo < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gorepo-cli/gorepo/releases/download/v1.1.0/gorepo_1.1.0_linux_amd64.tar.gz"
-        sha256 "10225abe9514837d300b0d4014129c3ec19f799a156d1eac7223428aff95ed2c"
+        url "https://github.com/gorepo-cli/gorepo/releases/download/v1.1.1/gorepo_1.1.1_linux_amd64.tar.gz"
+        sha256 "55d78fa7de7b782ed3415cfb41622ada1c98b638c873ae83bb08877ad8cb59dc"
 
         def install
           bin.install "gorepo"
@@ -40,8 +40,8 @@ class Gorepo < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gorepo-cli/gorepo/releases/download/v1.1.0/gorepo_1.1.0_linux_arm64.tar.gz"
-        sha256 "100f0a7171a09775c9424a59bcd325a33fa42aaf7861563217b203c442982526"
+        url "https://github.com/gorepo-cli/gorepo/releases/download/v1.1.1/gorepo_1.1.1_linux_arm64.tar.gz"
+        sha256 "1d0dda56ffb875a60dc65c48c9ebb4374d1b4bd6a234eaa8eb9ef59dfcc4dafe"
 
         def install
           bin.install "gorepo"
